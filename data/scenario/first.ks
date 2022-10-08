@@ -1,6 +1,6 @@
 ;一番最初に呼び出されるファイル
 
-[title name="人臥狼咆-JINGAROHO"]
+[title name="人臥狼咆-JINGAROUHOU-"]
 
 [stop_keyconfig]
 

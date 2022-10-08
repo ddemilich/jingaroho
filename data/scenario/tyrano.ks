@@ -166,6 +166,13 @@ tf.savetext = "<span style='font-size:10px'>"+tf.save_date+"</span><br />"+tf.ti
 
 [endmacro]
 
+;リプレイを未開放に戻す
+[macro name="clearreplay"]
+  [iscript]
+    sf.replay_view[mp.name] = undefined
+  [endscript] 
+[endmacro]
+
 [macro name="endreplay"]
 
     [if exp="tf.flag_replay == true"]
