@@ -117,7 +117,7 @@
 @jump target="*replaypage"
 
 *set_replay_all
-[setreplay name="replay01"]
+[setreplay name="replay01" storage="scene1_A1.ks" target="*start"]
 [setreplay name="replay02"]
 [setreplay name="replay03"]
 [setreplay name="replay04"]
@@ -207,6 +207,7 @@
 [cm]
 
 [iscript]
+    // リプレイモードフラグ:このページに戻ってくるためのアンカ
     tf.flag_replay = true;
 [endscript]
 
