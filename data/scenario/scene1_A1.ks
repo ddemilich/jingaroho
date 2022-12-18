@@ -33,43 +33,103 @@
 [chara_config ptext="chara_name_area"]
 
 ;このゲームで登場するキャラクターを宣言
-;akane
-[chara_new  name="akane" storage="chara/akane/normal.png" jname="あかね"  ]
-;キャラクターの表情登録
-[chara_face name="akane" face="angry" storage="chara/akane/angry.png"]
-[chara_face name="akane" face="doki" storage="chara/akane/doki.png"]
-[chara_face name="akane" face="happy" storage="chara/akane/happy.png"]
-[chara_face name="akane" face="sad" storage="chara/akane/sad.png"]
+;emofuri
+[emote_new name="akane_e" storage="akane_emofuri"]
 
-
-;yamato
-[chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
-
+[emote_variable name="akane_e" head_LR="30"]
 #
-さて、ゲームが簡単に作れるというから、来てみたものの[p]
-
-誰もいねぇじゃねぇか。[p]
-……[p]
-帰るか。。。[p]
-
-[font  size="30"   ]
-#?
-ちょっとまったーーーーー[p]
-[resetfont  ]
-
-#
-誰だ！？[p]
+ここでキャラクターの表情をデバッグします[p]
 
 ;キャラクター登場
-[chara_show  name="akane"  ]
-#?
-こんにちは。[p]
-私の名前はあかね。[p]
+[emote_show  name="akane_e"  scale="0.4" y="100"]
 #あかね
-もしかして、ノベルゲームの開発に興味があるの？[p]
-まず、ティラノスクリプトの特徴として[font color="red"]「HTML5」[resetfont]で動作するよ[p]
+こんにちは。[p]
+私の名前は風洞朱音。[p]
+#あかね
+[emote_motion name="akane_e" motion="sample_00"]
+"sample_00" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_01"]
+"sample_01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_02"]
+"sample_02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_03"]
+"sample_03" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_04"]
+"sample_04" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_05"]
+"sample_05" を再生しています。[p]
+
+[emote_motion name="akane_e" motion="sample_喜00"]
+"sample_喜00" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_喜01"]
+"sample_喜01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_喜02"]
+"sample_喜02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_喜03"]
+"sample_喜03" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_喜04"]
+"sample_喜04" を再生しています。[p]
+
+[emote_motion name="akane_e" motion="sample_怒00"]
+"sample_怒00" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_怒01"]
+"sample_怒01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_怒02"]
+"sample_怒02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_怒03"]
+"sample_怒03" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_怒04"]
+"sample_怒04" を再生しています。[p]
+
+[emote_motion name="akane_e" motion="sample_哀00"]
+"sample_哀00" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_哀01"]
+"sample_哀01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_哀02"]
+"sample_哀02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_哀03"]
+"sample_哀03" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_哀04"]
+"sample_哀04" を再生しています。[p]
+
+[emote_motion name="akane_e" motion="sample_楽00"]
+"sample_楽00" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_楽01"]
+"sample_楽01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_楽02"]
+"sample_楽02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_楽03"]
+"sample_楽03" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_楽04"]
+"sample_楽04" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_楽05"]
+"sample_楽05" を再生しています。[p]
+
+[emote_motion name="akane_e" motion="sample_驚00"]
+"sample_驚00" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_驚01"]
+"sample_驚01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_驚02"]
+"sample_驚02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_驚03"]
+"sample_驚03" を再生しています。[p]
+
+
+[emote_motion name="akane_e" motion="sample_複合01"]
+"sample_複合01" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_複合02"]
+"sample_複合02" を再生しています。[p]
+[emote_motion name="akane_e" motion="sample_複合03"]
+"sample_複合03" を再生しています。[p]
+
+
+[emote_motion name="akane_e" motion="普通"]
+"普通" を再生しています。[p]
+[emote_motion name="akane_e" motion="微笑"]
+"微笑" を再生しています。[p]
+
 [cm]
-[chara_hide name="akane"]
+[emote_hide name="akane_e"]
 [freeimage layer=1]
 
 [scene_footer]

@@ -18,6 +18,9 @@
 ;最初は右下のメニューボタンを非表示にする
 [hidemenubutton]
 
+[plugin name="emote"]
+[emote_logo]
+
 ;タイトル画面へ移動
 @jump storage="title.ks"
 
