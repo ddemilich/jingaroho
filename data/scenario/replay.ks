@@ -8,7 +8,7 @@
 [cm]
 
 
-[bg storage="../../tyrano/images/system/bg_base.png" time=100]
+[bg storage="bg_base.png" time=100]
 [layopt layer=1 visible=true]
 
 [image name="label_replay" layer=1 left=0 top=0 storage="config/label_recollection.png" folder="image" ]
@@ -24,8 +24,8 @@
 
 *replaypage
 [cm]
-[button graphic="config/menu_button_close.png" enterimg="config/menu_button_close2.png"  target="*backtitle" x=1150 y=40 ]
-[button graphic="button/auto.png" enterimg="button/auto2.png"  target="*set_replay_all" x=850 y=40 ]
+[button graphic="config/c_btn_back.png" enterimg="config/c_btn_back2.png"  target="*backtitle" x=1160 y=20 ]
+[button graphic="button/showall.png" enterimg="button/showall2.png"  target="*set_replay_all" x=850 y=20 ]
 [button graphic="button/close.png" enterimg="button/close2.png"  target="*clear_replay_all" x=650 y=40 ]
 
 [iscript]
@@ -58,7 +58,7 @@
 [replay_image_button name="replay17" graphic="cg3_A3B3.png" no_graphic="../../tyrano/images/system/noimage.png" x=860 y=470 width=160 height=120 folder="bgimage" ]
 [replay_image_button name="replay18" graphic="cg3_C1.png" no_graphic="../../tyrano/images/system/noimage.png" x=1060 y=470 width=160 height=120 folder="bgimage" ]
 
-[button graphic="config/arrow_next.png" target="*nextpage" x=1150 y=620 ]
+[button graphic="config/arrow_next.png" target="*nextpage" x=1160 y=600 ]
 @jump target ="*common"
 
 
@@ -85,8 +85,8 @@
 [replay_image_button name="replay35" graphic="cg5_end.png" no_graphic="../../tyrano/images/system/noimage.png" x=860 y=470 width=160 height=120 folder="bgimage" ]
 [replay_image_button name="replay36" graphic="cg6_end.png" no_graphic="../../tyrano/images/system/noimage.png" x=1060 y=470 width=160 height=120 folder="bgimage" ]
 
-[button graphic="config/arrow_prev.png" target="*backpage" x=40 y=620 ]
-[button graphic="config/arrow_next.png" target="*nextpage" x=1150 y=620 ]
+[button graphic="config/arrow_prev.png" target="*backpage" x=20 y=600 ]
+[button graphic="config/arrow_next.png" target="*nextpage" x=1160 y=600 ]
 @jump target ="*common"
 
 *page_2
@@ -95,7 +95,7 @@
 [replay_image_button name="replay38" graphic="cg0_Ap1.png" no_graphic="../../tyrano/images/system/noimage.png" x=260 y=150 width=160 height=120 folder="bgimage" ]
 [replay_image_button name="replay39" graphic="cg0_Bp1.png" no_graphic="../../tyrano/images/system/noimage.png" x=460 y=150 width=160 height=120 folder="bgimage" ]
 [replay_image_button name="replay40" graphic="cg0_Cp1.png" no_graphic="../../tyrano/images/system/noimage.png" x=660 y=150 width=160 height=120 folder="bgimage" ]
-[button graphic="config/arrow_prev.png" target="*backpage" x=40 y=620 ]
+[button graphic="config/arrow_prev.png" target="*backpage" x=20 y=600 ]
 @jump target ="*common"
 
 *common

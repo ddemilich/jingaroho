@@ -43,7 +43,10 @@
 
 		$(".menu_item").hover(function(){
 			tmp_src = $(this).find("img").attr("src");
-			var img_src = tmp_src.replace(".png","2.png");
+			var img_src = tmp_src;
+			if (!tmp_src.match("2.png$")) {
+				img_src = tmp_src.replace(".png","2.png");
+			}
 			$(this).find("img").attr("src",img_src);
 		},
 		function(){
