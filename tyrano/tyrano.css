@@ -41,15 +41,13 @@ abbr,acronym{
 /*smart novel original css */
 
 .vertical_text{
-    
-    font-family:'@ＭＳ 明朝';
+    font-family:'Meiryo UI',serif;
     /*color:white;*/
     writing-mode:tb-rl;
     writing-mode:vertical-rl ;
     -webkit-writing-mode:vertical-rl ;
     float:right;
     height:100%;
-
 }
 
 
@@ -90,8 +88,8 @@ abbr,acronym{
 	padding: 20px;
 	border: 1px solid #798993;
 	border-radius: 0;
-	color: #798993;
-	background: rgba(251, 250, 249, .5);
+	color: #FFFFFF;
+	background: rgba(255 ,255 ,255 ,.1);
 	font-weight: normal;
 	text-align: left;
 	line-height: 1.6em;
@@ -357,7 +355,7 @@ body{
 /*名前欄*/
 .vchat-name {
     margin-top:20px;
-    font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
+    font-family: "Meiryo UI",sans-serif; 
 }
 
 /*吹き出しテキスト */
@@ -379,7 +377,7 @@ body{
   overflow-wrap: break-word;
   -webkit-touch-callout:none;
   -webkit-user-select: none;
-  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
+  font-family: "Meiryo UI",serif; 
   /*float: left;*/
 }
 
