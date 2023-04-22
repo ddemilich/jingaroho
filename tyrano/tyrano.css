@@ -62,7 +62,7 @@ abbr,acronym{
 
 
 /*メニュー*/
-.menu_item {position:relative;margin-top:2%;text-align:center;}
+.menu_item {position:relative;margin-top:2%;text-align:left;}
 .menu_item img {cursor:pointer}
 
 /*
