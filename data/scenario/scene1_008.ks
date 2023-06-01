@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,28 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_008"]
 
-;;; エロシーン1-A1
+;;; シーン1-008
+; 逢引中を襲いにいく途中で妨害、戦闘
+; 
+; お前を代わりにいただくとしよう
+; 醜い犬
+; 圧勝
+; 他の仲間の情報を
+; 嘘をついて
+; 撃ち殺す
+; 死体の処理
+
+; 人狼会話
+; 一人いない
+; お楽しみ中
+; 何かに気付く・・・
 
 #
-シーン1-103[p]
-
-
+シーン1-008[p]
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]

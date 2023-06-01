@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,23 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_001"]
 
-;;; エロシーン1-A1
-
+;;; シーン1-001
+;
+; 学園に向かうバスの中
+; 同乗者との会話
+; 回想シーン
+; 作戦会議
+; 学園の説明
+; 作戦概要
+; 霧子が受験
+; 回想シーン終わり
+; 到着＆挨拶
 #
-シーン1-103[p]
-
-
+シーン1_001[p]
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]

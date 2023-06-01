@@ -177,6 +177,7 @@
 確認してみてね。[p]
 
 [cm]
+[hidemenubutton]
 [movie storage="jingaro_op.mp4" skip="true"]
 ;シーンフッタ
 [scene_footer]

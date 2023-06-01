@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,44 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_009"]
 
-;;; エロシーン1-A1
-
+;;; シーン1-009
+; ケンが行方不明になり、治安維持隊に報告
+; 
+; 事情聴取
+; よくあること
+; 変な手紙
+; 待ち合わせの場所を見張る
+; 用務員が来る
+; 地下道への入り口
 #
-シーン1-103[p]
+シーン1-009[p]
 
+; 近づいてみる、みない。
+[glink text="調べる" size=20 width=520 height=70 x=60 y=150 color=blue target=confirm ]
+[glink text="調べない" size=20 width=520 height=70 x=60 y=260 color=blue target=ignore ]
+[s]
 
+*confirm
+#
+どこに向かうのか把握する必要がある。[p]
+[iscript]
+    tf.flag_alt = 0
+[endscript]
+[jump target="footer"]
+
+*ignore
+#
+そもそもあの手紙がきっかけでここまで来た。[l]誰かに誘導されているような・・・。[p]
+[iscript]
+    tf.flag_alt = 1
+[endscript]
+[jump target="footer"]
+
+*footer
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]

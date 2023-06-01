@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,35 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_006"]
 
-;;; エロシーン1-A1
-
+;;; シーン1-006
+; 用務員としての日常
+; メンバー紹介
+; 作業の説明
+; 学園へ。
+; 掃除。焼却炉。修理。
+; 学生
+; ランチ
+; 指定の家へ。
+; 水道トラブル
+; いいより→拒否
+; しつこい→説教
+; 学園の事情
+; 歓迎会 明日なら
+;
+; 帰宅
+; 手紙
+;
+; 人狼会話
+; 
+; パトロール 
+; 逢引発見
+; 帰宅
 #
-シーン1-103[p]
-
-
+シーン1-006[p]
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]

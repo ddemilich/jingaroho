@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,27 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_101"]
 
-;;; エロシーン1-A1
-
+;;; シーン1-101
+; 始末に失敗して敵は逃亡
+; 
+; 傷つければ分かる
+; 銃で脚を撃つ
+; 煙を発生
+; 体液が迸る
+; 確信からのジャンプ頭部狙撃
+; 落とし穴
+; 糸に引っかかって止まる
+; 敵は落ちていく
+; 取引は不成立だ
+; 悔しい
+; 新次が見ていた・・・
 #
-シーン1-103[p]
+シーン1-101[p]
 
-
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]

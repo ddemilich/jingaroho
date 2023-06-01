@@ -31,22 +31,34 @@
 
 ; シーン生成
 ; debug
-[new_scene name="1_A1" storage="scene1_A1.ks" nextdefault="title"]
 ; タイトル(戻ってくる専用)
 [new_scene name="title" storage="title.ks" nextdefault="title"]
 ; プロローグ
-[new_scene name="p_001" storage="sceneP_001.ks" nextdefault="title"]
-; ルート1
-[new_scene name="1_001" storage="scene1_001.ks" nextdefault="1_099"]
-[new_scene name="1_099" storage="scene1_099.ks" nextdefault="1_101" nextalt1="1_101" nextalt2="2_001" nextalt3="3_001"]
-[new_scene name="1_101" storage="scene1_101.ks" nextdefault="1_199"]
+[new_scene name="p_001" storage="sceneP_001.ks" nextdefault="1_001"]
+; ルート1 A堕ち
+[new_scene name="1_001" storage="scene1_001.ks" nextdefault="1_002"]
+[new_scene name="1_002" storage="scene1_002.ks" nextdefault="1_003"]
+[new_scene name="1_003" storage="scene1_003.ks" nextdefault="1_004"]
+[new_scene name="1_004" storage="scene1_004.ks" nextdefault="1_005"]
+[new_scene name="1_005" storage="scene1_005.ks" nextdefault="1_006"]
+[new_scene name="1_006" storage="scene1_006.ks" nextdefault="1_007"]
+[new_scene name="1_007" storage="scene1_007.ks" nextdefault="1_008"]
+[new_scene name="1_008" storage="scene1_008.ks" nextdefault="1_009"]
+[new_scene name="1_009" storage="scene1_009.ks" nextdefault="1_010" nextalt1="3_001"]
+[new_scene name="1_010" storage="scene1_010.ks" nextdefault="1_101" nextalt1="2_001"]
+[new_scene name="1_101" storage="scene1_101.ks" nextdefault="1_102"]
+[new_scene name="1_102" storage="scene1_102.ks" nextdefault="1_103"]
+[new_scene name="1_103" storage="scene1_103.ks" nextdefault="1_A1"]
+[new_scene name="1_A1" storage="scene1_A1.ks" nextdefault="title"]
+
 [new_scene name="1_199" storage="scene1_199.ks" nextdefault="1_201" nextalt1="1_201" nextalt2="5_001"]
 [new_scene name="1_201" storage="scene1_201.ks" nextdefault="1_299"]
 [new_scene name="1_299" storage="scene1_299.ks" nextdefault="1_901"]
 [new_scene name="1_901" storage="scene1_901.ks" nextdefault="1_999"]
 [new_scene name="1_999" storage="scene1_999.ks" nextdefault="title"]
-; ルート2
-[new_scene name="2_001" storage="scene2_001.ks" nextdefault="2_099"]
+; ルート2 B堕ち
+[new_scene name="2_001" storage="scene2_001.ks" nextdefault="title"]
+
 [new_scene name="2_099" storage="scene2_099.ks" nextdefault="2_101" nextalt1="2_101" nextalt2="4_001"]
 [new_scene name="2_101" storage="scene2_101.ks" nextdefault="2_199"]
 [new_scene name="2_199" storage="scene2_199.ks" nextdefault="2_201" nextalt1="2_201" nextalt2="6_001"]
@@ -54,29 +66,30 @@
 [new_scene name="2_299" storage="scene2_299.ks" nextdefault="2_901"]
 [new_scene name="2_901" storage="scene2_901.ks" nextdefault="2_999"]
 [new_scene name="2_999" storage="scene2_999.ks" nextdefault="title"]
-; ルート3
-[new_scene name="3_001" storage="scene3_001.ks" nextdefault="3_099"]
+; ルート3 AB同時堕ち
+[new_scene name="3_001" storage="scene3_001.ks" nextdefault="title"]
+
 [new_scene name="3_099" storage="scene3_099.ks" nextdefault="3_101" nextalt1="3_101" nextalt2="7_001"]
 [new_scene name="3_101" storage="scene3_101.ks" nextdefault="3_199"]
 [new_scene name="3_199" storage="scene3_199.ks" nextdefault="3_901"]
 [new_scene name="3_901" storage="scene3_901.ks" nextdefault="3_999"]
 [new_scene name="3_999" storage="scene3_999.ks" nextdefault="title"]
-; ルート4
+; ルート4 C堕ち
 [new_scene name="4_001" storage="scene4_001.ks" nextdefault="4_099"]
 [new_scene name="4_099" storage="scene4_099.ks" nextdefault="4_901"]
 [new_scene name="4_901" storage="scene4_901.ks" nextdefault="4_999"]
 [new_scene name="4_999" storage="scene4_999.ks" nextdefault="title"]
-; ルート5
+; ルート5 Aだけおち
 [new_scene name="5_001" storage="scene5_001.ks" nextdefault="5_099"]
 [new_scene name="5_099" storage="scene5_099.ks" nextdefault="5_901"]
 [new_scene name="5_901" storage="scene5_901.ks" nextdefault="5_999"]
 [new_scene name="5_999" storage="scene5_999.ks" nextdefault="title"]
-; ルート6
+; ルート6 Bだけおち
 [new_scene name="6_001" storage="scene6_001.ks" nextdefault="6_099"]
 [new_scene name="6_099" storage="scene6_099.ks" nextdefault="6_901"]
 [new_scene name="6_901" storage="scene6_901.ks" nextdefault="6_999"]
 [new_scene name="6_999" storage="scene6_999.ks" nextdefault="title"]
-; ルート7
+; ルート7 True
 [new_scene name="7_001" storage="scene7_001.ks" nextdefault="7_099"]
 [new_scene name="7_099" storage="scene7_099.ks" nextdefault="7_901"]
 [new_scene name="7_901" storage="scene7_901.ks" nextdefault="7_999"]

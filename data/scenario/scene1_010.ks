@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,43 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_010"]
 
-;;; エロシーン1-A1
+;;; シーン1-010
+; 狂介登場・駆け引きをもちかける
+; 自分は実は人狼である
+; 戦闘力は無い
+; キミ達狩人の目的はこの学園の人狼の殲滅だろう
+; 私は人は襲わない。研究がいいところまできた。
+; 仲間の情報と引き換えに自分を見逃してほしい
 
 #
-シーン1-103[p]
+シーン1-010[p]
 
+; 近づいてみる、みない。
+[glink text="取引に乗る" size=20 width=520 height=70 x=60 y=150 color=blue target=bear ]
+[glink text="こいつはここで始末する" size=20 width=520 height=70 x=60 y=260 color=blue target=bull ]
+[s]
 
+*bear
+#
+人狼と確定させてからでも遅くない。取引に乗ろう[p]
+[iscript]
+    tf.flag_alt = 0
+[endscript]
+[jump target="footer"]
+
+*bull
+#
+嫌な予感がする。人狼であっても人間であってもこいつを生かしておくのは危険だ。[p]
+[iscript]
+    tf.flag_alt = 1
+[endscript]
+[jump target="footer"]
+
+*footer
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]

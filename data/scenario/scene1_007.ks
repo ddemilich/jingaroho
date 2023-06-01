@@ -6,12 +6,8 @@
 [clearfix]
 [start_keyconfig]
 
-[scene_header name="1_A1"]
 
 [bg storage="room.jpg" time="100"]
-[iscript]
-    tf.next_scene = "title.ks"
-[endscript]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -53,13 +49,29 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_A1"]
+[scene_header name="1_007"]
 
-;;; エロシーン1-A1
+;;; シーン1-007
+; 占いの結果・・・
+; 
+; 出勤。学園へ。
+; アリバイを作って殺すか・・・
+; 暴力の話
+; ランチ
+; 何年いるのか
+; 前いた子の話
+; 歓迎会
+; 用事があった
+; お先に。
+; ダルがらみ
+; どんな人か
+; 帰宅
+; 出動
 
 #
-シーン1-103[p]
-
-
+シーン1-007[p]
+[cm]
+;シーンフッタ
 [scene_footer]
+
 [s]
