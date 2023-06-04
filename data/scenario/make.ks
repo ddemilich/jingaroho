@@ -5,8 +5,6 @@
 ;
 ;
 
-[emote_restore]
-
 ;make.ks はロード時にcallとして呼ばれるため、return必須です。
 [return]
 
