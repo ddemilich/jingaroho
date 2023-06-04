@@ -49,9 +49,9 @@
 [chara_face name="akane" face="07_dominated_b" storage="chara/heroine_A_akane/07_dominated_b.png"]
 
 ;シーンヘッダ。自分の名前を指定。
-[scene_header name="1_101"]
+[scene_header name="2_001"]
 
-;;; シーン1-101
+;;; シーン2-001
 ; 始末に失敗して敵は逃亡
 ; 
 ; 傷つければ分かる
@@ -66,7 +66,7 @@
 ; 悔しい
 ; 新次が見ていた・・・
 #
-シーン1-101[p]
+シーン2-001[p]
 
 [cm]
 ;シーンフッタ
