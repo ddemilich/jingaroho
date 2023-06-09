@@ -34,7 +34,7 @@
 ; タイトル(戻ってくる専用)
 [new_scene name="title" storage="title.ks" nextdefault="title"]
 ; プロローグ
-[new_scene name="p_001" storage="sceneP_001.ks" nextdefault="1_001"]
+[new_scene name="p_001" storage="sceneP_001.ks" nextdefault="title"]
 ; ルート1 A堕ち
 [new_scene name="1_001" storage="scene1_001.ks" nextdefault="1_002"]
 [new_scene name="1_002" storage="scene1_002.ks" nextdefault="1_003"]

@@ -2,8 +2,11 @@
 [cm]
 
 @clearstack
-@bg storage ="title.png" time=100
+@bg storage="title.png" time=100
 @wait time = 200
+
+[playbgm storage="BPM152覚めない悪夢loop.mp3" loop="true" volume="30"]
+
 
 *start 
 
@@ -21,6 +24,8 @@
 
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
+[stopbgm]
+
 @jump storage="sceneP_001.ks"
 
 

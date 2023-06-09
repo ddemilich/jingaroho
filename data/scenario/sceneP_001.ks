@@ -6,16 +6,6 @@
 [clearfix]
 [start_keyconfig]
 
-[preload storage="data/sound/ゾンビの声3.mp3"]
-[preload storage="data/sound/バタンと倒れる.mp3"]
-[preload storage="data/sound/パンチの素振り3.mp3"]
-[preload storage="data/sound/倒れる.mp3"]
-[preload storage="data/sound/刀の素振り1.mp3"]
-[preload storage="data/sound/建物が少し崩れる2.mp3"]
-[preload storage="data/sound/拳銃を撃つ.mp3"]
-[preload storage="data/sound/高速移動.mp3"]
-[preload storage="data/bgm/魔力に満ちた部屋.mp3"]
-
 [bg storage="bgbf009.bmp" time="100"]
 
 ;メニューボタンの表示
@@ -77,12 +67,11 @@
 [chara_face name="kiriko" face="07_dominated_b" storage="chara/heroine_B_kiriko/07_dominated_b.png"]
 
 ;isamaru
-[chara_new name="isamaru" storage="chara/mob/mob_cleaner_male_gray.png" jname="今田勇丸" width="800" height="1130"]
+[chara_new name="isamaru" storage="chara/mob/mob_isamaru.png" jname="今田勇丸" width="800" height="1130"]
 [chara_face name="isamaru" face="wolf" storage="chara/mob/mob_wolf.png"]
 
 ;シーンヘッダ。自分の名前を指定。
 [scene_header name="p_001"]
-
 ;;; プロローグ
 ;
 ; YMSの部屋で連行されてきた人狼を尋問
@@ -101,6 +90,8 @@
 間違いありませんね？[p]
 #男
 ・・・ああ。[p]
+[chara_show name="isamaru" left="500"]
+
 #
 薄暗い地下室で男が尋問されていた。[l][r]
 男は両腕を縛られて椅子に座らされている。[p]
@@ -110,7 +101,7 @@
 
 ;キャラクター登場
 [chara_mod  name="akane" face="02_angry_a"  ]
-[chara_show  name="akane" top="50"]
+[chara_show  name="akane" left="-100"]
 #
 尋問をしているのは赤い髪の女性だ。[r]
 男を射抜く目は水色に輝いている。[p]
@@ -139,21 +130,23 @@
 #akane
 いえいえ、そんな侮辱的な意味ではありません。[l][r]
 もっと生物学的な意味で[l][r]
-[anim name="akane" left="-=150" time="1000" wait="false" effect="easeOutCubic"]
-[chara_show name="kiriko" top="50" left="600" time="2000" wait="true"]
+[anim name="akane" left="-=150" time="500" wait="false" effect="easeOutCubic"]
+[chara_hide name="isamaru" time="500"]
+[chara_show name="kiriko" left="500" time="500" wait="true"]
 [wa]
 ―――確認していました。[p]
 
 #
 部屋の扉を塞ぐように青い髪の女性が見張りとして立っている。[l][r]
-[anim name="kiriko" top="70" time="300"][wa]
-[anim name="kiriko" top="50" time="200"][wa]
+[anim name="kiriko" top="20" time="300"][wa]
+[anim name="kiriko" top="0" time="200"][wa]
 見張りは目配せで何かを伝えたようだ。[p]
-[anim name="akane" top="70" time="300"][wa]
-[anim name="akane" top="50" time="200"][wa]
+[anim name="akane" top="20" time="300"][wa]
+[anim name="akane" top="0" time="200"][wa]
 
 [anim name="akane" left="+=150" time="500" effect="easeOutCubic"]
-[chara_hide name="kiriko"]
+[chara_show name="isamaru" left="500" wait="false"]
+[chara_hide name="kiriko" time="500" wait="true"]
 #akane
 今田さん・・・。[l][r]
 貴方―――[l][r]
@@ -168,19 +161,18 @@
 [chara_mod name="akane" face="04_relax_a" wait="true"]
 #akane
 トボけてもだめだめ。証拠は挙がってるんだから。[p]
-[anim name="akane" left="-=150" time="1000" effect="easeOutCubic"]
-[chara_show name="isamaru" left="600" top="50"]
 #isamaru
 [font color="red" bold="true"]
 何のことだかさっぱりだ！[l][r]
 [resetfont]
 こんな取り調べがあるか！[l]人権侵害だ！[l][r]
-そ、そうだ！弁護士を呼べ！[p]
+そ、そうだ！弁護士を呼べ！[l]
+―――！――！[p]
 #
-―――その瞬間[l][r]
+男が抗議をしているのをよそ目に尋問官はゆっくりと拳銃を取り出し―――[l][r]
 [playse storage="拳銃を撃つ.mp3"]
 [chara_mod name="akane" face="02_angry_a" wait="true"]
-尋問官は拳銃を取り出し男に向かって発砲した。
+男に向かって発砲した。
 [anim name="isamaru" top="+=100" time="100"]
 [wa]
 [p]
@@ -189,11 +181,11 @@
 [playse storage="倒れる.mp3"]
 #
 椅子ごと崩れ落ちる男。
-[anim name="isamaru" top="+=150" time="500"]
+[anim name="isamaru" top="+=150" time="300"]
 [wa]
-[anim name="isamaru" top="+=200" time="500"]
+[anim name="isamaru" top="+=200" time="300"]
 [wa]
-[anim name="isamaru" top="+=500" time="1000" effect="easeInCubic"]
+[anim name="isamaru" top="+=500" time="500" effect="easeInCubic"]
 [wa]
 [p]
 
@@ -202,7 +194,7 @@
 ほらほら。早く変身しないと死んじゃいますよ？[p]
 
 [chara_mod name="isamaru" face="wolf"]
-[anim name="isamaru" top="50" time="200" effect="easeOutCubic"]
+[anim name="isamaru" top="0" time="200" effect="easeOutCubic"]
 [wa]
 [playse storage="ゾンビの声3.mp3"]
 #isamaru
@@ -212,8 +204,8 @@
 獣の姿となった男が、尋問官に襲い掛かる。[l][r]
 [playse storage="建物が少し崩れる2.mp3" buf="1"]
 [playse storage="パンチの素振り3.mp3"]
-[anim name="isamaru" left="50" time="250" effect="easeOutElastic"]
-[anim name="akane" left="+=800" time="200" effect="easeOutCubic"]
+[anim name="isamaru" left="-100" time="250" effect="easeOutElastic"]
+[anim name="akane" left="500" time="200" effect="easeOutCubic"]
 尋問官は軽々と[ruby text="かわ"]躱す。[p]
 
 #akane
@@ -244,9 +236,9 @@
 [p]
 
 [playse storage="バタンと倒れる.mp3"]
-[anim name="isamaru" top="+=150" time="500"]
+[anim name="isamaru" top="+=100" time="500"]
 [wa]
-[anim name="isamaru" top="+=200" time="500"]
+[anim name="isamaru" top="+=150" time="500"]
 [wa]
 #isamaru
 グァアアアア![p]
@@ -260,15 +252,15 @@
 [chara_mod name="akane" face="04_relax_a" wait="true"]
 #akane
 狩人と戦ったことが無かったのかなぁ？[p]
-だとしたら結構な田舎の出身だね、君は。[p]
+だとしたら結構な田舎の出身だね、キミは。[p]
 
 #
 尋問官は再び筒を男に向ける[p]
 
 [chara_mod name="akane" face="02_angry_a" wait="true"]
 #akane
-君にはいくつか聞きたいことがある。[p]
-[font color="red" bold="true"]虚偽の証言[resetfont]をした瞬間頭を吹き飛ばす。[p]
+人狼のキミにはいくつか聞きたいことがある。[l][r]
+[font color="red" bold="true"]虚偽の証言[resetfont]をした瞬間頭を吹き飛ばす。[l][r]
 [chara_mod name="akane" face="01_happy_a" wait="true"]
 そうなりたくないでしょう？[p]
 
@@ -280,7 +272,7 @@
 [chara_mod name="akane" face="02_angry_a" wait="true"]
 #akane
 仲間の数と居場所を教えろ。[l][r]
-君たち人狼は夜間に相談が可能と聞いている。[l][r]
+君たち人狼は夜間に[font bold="true"]相談[resetfont]が可能と聞いている。[l][r]
 相談相手は何匹いて、どこにいる？[p]
 
 #isamaru
@@ -290,7 +282,7 @@
 #akane
 (今はいない・・・か・・・)[l][r]
 [chara_mod name="akane" face="02_angry_a" wait="true"]
-昔の話でもいい。一番最近相談したときのこと・・・覚えてる？[p]
+昔の話でもいい。一番最近[font bold="true"]相談[resetfont]したときのこと・・・覚えてる？[p]
 
 #isamaru
 俺は・・・そう。[ruby text="しぶ"]渋[ruby text="が"]ヶ[ruby text="やま"]山学園から出てきたんだ。。。[p]
@@ -302,11 +294,10 @@
 続けて。[p]
 
 #isamaru
-そこで人をヤってたんだが・・・[l][r]
-そん時の仲間は俺以外に５人いた・・・はずだ・・・。[p]
+そこで俺は・・・仲間と人を襲って・・・[l][r]
+俺以外に・・・５人いた・・・はずだ・・・。[p]
 
 #akane
-(今のところ・・・全て正直に話している・・・)[l][r]
 ５人の名前は？[p]
 
 #isamaru
@@ -314,11 +305,11 @@
 
 #akane
 (人数だけでも上々・・・かな。)[l][r]
-その前はどうだ？その学園に入る前は・・・どこでヤッてたんだ？[p]
+その前はどうだ？その学園に入る前は・・・どこでよろしくヤッてたんだ？[p]
 
 #isamaru
 もういいだろう！[l][r]
-[font color="red" bold="true"]知っていることは全部喋った！[resetfont][l]早く・・・治療を・・・[p]
+[font color="red" bold="true"]知っていることは全部喋った！[resetfont][l]早く・・・傷の治療を・・・[p]
 
 #akane
 [chara_mod name="akane" face="03_sad_a" wait="true"]
@@ -341,10 +332,10 @@
 [wa]
 [mask time="100" effect="fadeInLeftBig"]
 
-[chara_hide_all]
+[chara_hide_all time="0"]
 #
 
-[chara_show name="kiriko" top="50" left="600"]
+[chara_show name="kiriko" left="600" time="100"]
 [chara_show name="isamaru" face="wolf" top="400" left="-600" reflect="true"]
 [mask_off time="100" effect="fadeOutLeftBig"]
 [anim name="isamaru" left="0" effect="easeOutElastic"]
@@ -353,11 +344,15 @@
 ・・・。[p]
 
 #isamaru
-お前もこｒ[p]
+俺はこんなところで終わらねぇ！[l][r]
+[playse storage="ゾンビの声3.mp3"]
+そこをどけェエエエエ！[p]
+[anim name="isamaru" left="500" effect="easeOutElastic" time="300"]
+[chara_mod name="kiriko" face="02_angry_a" wait="true"]
 [playse storage="刀の素振り1.mp3"]
 [chara_hide name="isamaru"]
 #
-男は何か発しようとしたが・・・言葉にならないうちに細かく刻まれた肉片となっていた。[p]
+見張りに襲い掛かった獣は細かく刻まれた肉片となっていた。[p]
 
 [playse storage="打撃8.mp3"]
 [chara_mod name="kiriko" face="03_sad_a" wait="true"]
@@ -369,13 +364,21 @@
 危ないとこだったー！ありがと！[p]
 
 #kiriko
-煽りすぎでしょ・・・[l][r]
-あ、研究開発部に連絡しなきゃ。[l][r]サンプル欲しがってたから。[p]
+煽りすぎでしょ・・・[p]
+
+#akane
+えへへ。[l][r]ちょっとやりすぎちゃった[p]
+
+#kiriko
+ハァ・・・[l][r]
+研究開発部に連絡しないと・・・。[l][r]
+サンプル欲しがってたから。[p]
 
 #akane
 あたしかけるよ。[l][r]
 生け捕りにできなかったから怒られそうだし・・・[p]
 
+[playse storage="携帯電話に出る.mp3"]
 #akane
 あ、もしもしー。こちら風洞です。[l]はい。[l]はい。[l][r]
 そうです。地下の夜間会議室５番目です。[l][r]
@@ -385,16 +388,25 @@
 [mask effect="fadeIn"]
 [playse storage="鉄の扉を開ける.mp3"]
 [stopbgm]
+[playbgm storage="BPM152覚めない悪夢loop.mp3" volume="30"]
 ;キャラクター非表示
 [chara_hide_all]
 
 [cm]
 [hidemenubutton]
-
 [layopt layer="message0" visible="false"] 
-[bg storage="bg_base.png" time="0"]
+
 [mask_off time="100" effect="fadeOut"]
-[movie storage="jingaro_op.mp4" skip="true"]
+
+[movie storage="jingaro_op.mp4" skip="true" volume="30" mute="true"]
+
+[layopt layer="message0" visible="true"] 
+#
+体験版の体験版はここで終わりです。[l][r]
+タイトルページに戻ります[p]
+[layopt layer="message0" visible="false"] 
+
+[stopbgm]
 ;シーンフッタ
 [scene_footer]
 
